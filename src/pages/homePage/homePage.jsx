@@ -9,6 +9,7 @@ import AboutCouple from "../../components/aboutCouple/aboutCouple";
 import MorePictures from "../../components/morePictures/morePictures";
 import Modal from "../../components/modal/modal";
 import { IoMdCloseCircleOutline } from "react-icons/io";
+import Footer from "../../components/footer/footer";
 
 const HomePage = () => {
   const [groomModal, setGroomModal] = useState(false);
@@ -29,6 +30,7 @@ const HomePage = () => {
       <FloatingCard />
       <AboutCouple setGroomModal={setGroomModal} setBrideModal={setBrideModal} />
       <MorePictures />
+      <Footer />
       <Modal isOpen={groomModal} onClose={closeGroomModal}>
         <div className={styles.modal_content}>
           <div className={styles.close_icon}>

@@ -6,13 +6,15 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: fixed;
   bottom: 20px;
-  left: 40%;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   font-size: 30px;
   padding: 20px;
   color: orange;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: 20;
 }
 svg:hover{
@@ -21,6 +23,6 @@ svg:hover{
 @media screen and (max-width: 700px){
   .wrapper{
     width: 200px;
-    left: 60px;
+    /* left: 40%; */
   }
 }
