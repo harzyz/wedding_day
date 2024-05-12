@@ -1,12 +1,17 @@
 import React from 'react'
 import styles from './weddingNote.module.css'
 import cheers from '../../assets/images/cheerss.png'
-// import rosemary from '../../assets/images/rosmary.png'
+import rosemary from '../../assets/images/pngwing.com.png'
 
 const WeddingNote = () => {
   return (
     <section className={styles.wrapper}>
-      {/* <img src={rosemary} alt="" /> */}
+      <div className={styles.roses}>
+        <img src={rosemary} alt="" />
+      </div>
+      <div className={styles.roses2}>
+        <img src={rosemary} alt="" />
+      </div>
       <div className={styles.cheers_img}>
         <img src={cheers} alt="" />
       </div>

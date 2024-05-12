@@ -24,7 +24,6 @@ const Modal = ({ isOpen, onClose, children }) => {
           <div
             style={{
               background: '#ffffff',
-              borderRadius: '20px',
             }}
             className={styles.modal_inner_wrapper}
             onClick={e => e.stopPropagation()}
