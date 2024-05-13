@@ -10,6 +10,9 @@
   gap: 10px;
   align-items: center;
 }
+.navbar b{
+  font-size: 20px;
+}
 .emoji{
   height: 60px;
 }
@@ -20,5 +23,9 @@
   .navbar{
     padding: 0 20px;
     overflow: hidden;
+    gap: 5px;
+  }
+  .navbar b{
+    font-size: 17px;
   }
 }
