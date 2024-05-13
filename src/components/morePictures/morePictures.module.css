@@ -32,6 +32,7 @@
   font-size: 15px;
   font-weight: 500;
   background-color: #fff;
+  color: #000;
 }
 .photobook_btn:hover{
   scale: 1.5;
