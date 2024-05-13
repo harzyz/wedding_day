@@ -8,6 +8,7 @@
   justify-content: center;
   position: relative;
   text-align: center;
+  padding: 15px;
 }
 .wrapper h1{
   font-size: 54px;

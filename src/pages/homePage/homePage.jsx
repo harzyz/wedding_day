@@ -8,7 +8,6 @@ import WeddingNote from "../../components/weddingNote/weddingNote";
 import AboutCouple from "../../components/aboutCouple/aboutCouple";
 import MorePictures from "../../components/morePictures/morePictures";
 import Modal from "../../components/modal/modal";
-import { IoMdCloseCircleOutline } from "react-icons/io";
 import Footer from "../../components/footer/footer";
 
 const HomePage = () => {
@@ -33,9 +32,7 @@ const HomePage = () => {
       <Footer />
       <Modal isOpen={groomModal} onClose={closeGroomModal}>
         <div className={styles.modal_content}>
-          <div className={styles.close_icon}>
-            <IoMdCloseCircleOutline onClick={closeGroomModal} />
-          </div>
+          
           <p>
             Pelumi has given you a detailed history but I would just start from
             when I developed an interest in her. It was the day I took her to
@@ -56,11 +53,11 @@ const HomePage = () => {
       </Modal>
       <Modal isOpen={brideModal} onClose={closeBrideModal}>
         <div className={styles.modal_content}>
-          <div className={styles.close_icon}>
+          {/* <div className={styles.close_icon}>
             <IoMdCloseCircleOutline onClick={closeBrideModal} />
-          </div>
+          </div> */}
           <p>
-            Okay, let’s quickly take a walk down memory lane. It was the year
+            Okay, let's quickly take a walk down memory lane. It was the year
             2018, I was posted to a village called Igbemo in Ekiti state for
             NYSC. And school/service was set to resume in January as the camp
             ended in December. Being that Igbemo is a village, all the corpers

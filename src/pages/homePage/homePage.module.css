@@ -14,9 +14,9 @@
   to { scale: 1 1;}
 }
 .modal_content{
-  padding: 30px;
+  padding: 0px 30px;
   width: 500px;
-  height: 500px;
+  height: 400px;
   overflow-y: scroll;
 }
 .close_icon{
@@ -24,6 +24,18 @@
   width: 100%;
   display: flex;
   justify-content: end;
+  /* color: grey; */
+}
+.modal_content::-webkit-scrollbar{
+  width: 5px;
+}
+.modal_content::-webkit-scrollbar-thumb{
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.modal_content::-webkit-scrollbar-track{
+  border-top: 2px solid rgb(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgb(0, 0, 0, 0.3);
+  background-color: #FFF;
 }
 @media screen and (max-width: 700px) {
   .modal_content{

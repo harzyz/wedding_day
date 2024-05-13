@@ -4,8 +4,6 @@ import styles from "./aboutCouple.module.css";
 
 const AboutCouple = ({ setGroomModal, setBrideModal }) => {
   const [groom, setGroom] = useState(false);
-  // const [groomModal, setGroomModal] = useState(false)
-  // const [brideModal, setBrideModal] = useState(false)
 
   useEffect(() => {
     setTimeout(() => {
@@ -13,26 +11,6 @@ const AboutCouple = ({ setGroomModal, setBrideModal }) => {
     }, 30000);
   }, [groom]);
 
-  // const LoveStory = [
-  //   {
-  //     id: 1,
-  //     thubnail: '',
-  //     couple: 'Groom',
-  //     story: ''
-  //   },
-  //   {
-  //     id: 2,
-  //     thubnail: '',
-  //     couple: 'Groom',
-  //     story: ''
-  //   },
-  // ]
-  // const closeGroomModal = () =>{
-  //   setGroomModal(false)
-  // }
-  // const closeBrideModal = () =>{
-  //   setBrideModal(false)
-  // }
 
   return (
     <div className={styles.wrapper}>
@@ -51,9 +29,9 @@ const AboutCouple = ({ setGroomModal, setBrideModal }) => {
               from when I developed an interest in her. It was the day I took
               her to get a bulb for her room and we got talking for a while
               because it was a long walk to and fro. For some reason that I
-              can’t remember, we spoke on a deep level that painted a picture of
+              can't remember, we spoke on a deep level that painted a picture of
               her values. I started to visit her ...
-              <div onClick={() => setGroomModal(true)}>View More</div>
+              <div className={styles.view_more} onClick={() => setGroomModal(true)}>View More</div>
             </article>
           </div>
         </div>
@@ -70,14 +48,14 @@ const AboutCouple = ({ setGroomModal, setBrideModal }) => {
           <div className={styles.couple_story}>
             <h1>Bride</h1>
             <article>
-              Okay, let’s quickly take a walk down memory lane. It was the year
+              Okay, let's quickly take a walk down memory lane. It was the year
               2018, I was posted to a village called Igbemo in Ekiti state for
               NYSC. And school/service was set to resume in January as the camp
               ended in December. Being that Igbemo is a village, all the corpers
               are usually familiar with one another and of course, old corp
               members try to make the new ones feel welcome. My first encounter
               with Peter was on one of those ....
-              <div onClick={() => setBrideModal(true)}>View More</div>
+              <div className={styles.view_more} onClick={() => setBrideModal(true)}>View More</div>
             </article>
           </div>
         </div>

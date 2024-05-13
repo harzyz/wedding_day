@@ -41,7 +41,7 @@
   animation: fade-out linear;
   animation-duration: 3s ;
   /* animation-timeline: view(); */
-  animation-range: entry;
+  /* animation-range: entry; */
 }
 @keyframes fade-out {
   from { opacity: 0.4;}
@@ -62,7 +62,7 @@
 }
 @media screen and (max-width: 700px) {
   .wrapper {
-    height: 400px;
+    height: 500px;
   }
   .inner_wrapper h1 {
     font-size: 20px;
