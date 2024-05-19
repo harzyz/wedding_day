@@ -20,7 +20,7 @@ const MorePictures = () => {
           />
         </div>
       </div>
-      <Link to='/photo-book'><button className={styles.photobook_btn}>See full photobook</button></Link>
+      <Link className="link" to='/photo-book'><button className={styles.photobook_btn}>See full photobook</button></Link>
     </div>
   );
 };
