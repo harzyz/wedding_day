@@ -2,10 +2,12 @@ import React from "react";
 import styles from "./reception.module.css";
 // import { GiRose } from "react-icons/gi";
 import blackrose from "../../assets/images/blackrose.png";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Reception = () => {
   return (
-    <div className={styles.wrapper}>
+    <ScrollAnimation animateIn="fadeIn">
+    <div data-aos="fade-up" className={styles.wrapper}>
       <div className={styles.left_side}>
         <div className={styles.blackrose}>
           <img src={blackrose} alt="" />
@@ -23,6 +25,7 @@ const Reception = () => {
         <p>02:23 PM</p>
       </div>
     </div>
+    </ScrollAnimation>
   );
 };
 

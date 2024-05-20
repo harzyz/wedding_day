@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./morePictures.module.css";
 import { Link } from "react-router-dom";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 
 const MorePictures = () => {
   return (
+    <ScrollAnimation animateIn="fadeIn">
     <div className={styles.wrapper}>
       <div className={styles.inner_wrapper}>
         <div className={styles.img_wrapper}>
@@ -22,6 +25,7 @@ const MorePictures = () => {
       </div>
       <Link className="link" to='/photo-book'><button className={styles.photobook_btn}>See full photobook</button></Link>
     </div>
+    </ScrollAnimation>
   );
 };
 

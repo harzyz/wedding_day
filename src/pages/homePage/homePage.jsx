@@ -10,6 +10,7 @@ import MorePictures from "../../components/morePictures/morePictures";
 import Modal from "../../components/modal/modal";
 import Footer from "../../components/footer/footer";
 
+
 const HomePage = () => {
   const [groomModal, setGroomModal] = useState(false);
   const [brideModal, setBrideModal] = useState(false);

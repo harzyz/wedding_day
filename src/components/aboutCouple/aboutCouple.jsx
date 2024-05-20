@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styles from "./aboutCouple.module.css";
 // import Modal from '../modal/modal'
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const AboutCouple = ({ setGroomModal, setBrideModal }) => {
   const [groom, setGroom] = useState(false);
@@ -13,6 +15,7 @@ const AboutCouple = ({ setGroomModal, setBrideModal }) => {
 
 
   return (
+    <ScrollAnimation animateIn="fadeIn">
     <div className={styles.wrapper}>
       {!groom && (
         <div className={styles.inner_wrapper}>
@@ -69,6 +72,7 @@ const AboutCouple = ({ setGroomModal, setBrideModal }) => {
           className={groom ? styles.scrolled : styles.scrolled2}></div>
       </div>
     </div>
+    </ScrollAnimation>
   );
 };
 

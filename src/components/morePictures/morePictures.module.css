@@ -33,9 +33,10 @@
   font-weight: 500;
   background-color: #fff;
   color: #000;
+  transition: scale .3s ease;
 }
 .photobook_btn:hover{
-  scale: 1.5;
+  scale: 0.9;
 }
 
 /* @media (prefers-reduced-motion: no-prefrence){ */
