@@ -8,7 +8,6 @@ const WeddingNote = () => {
   return (
     <ScrollAnimation animateIn="fadeIn">
     <section className={styles.wrapper}>
-      {/* <img src={rosemary} alt="" /> */}
       <div className={styles.cheers_img}>
         <img src={cheers} alt="" />
       </div>

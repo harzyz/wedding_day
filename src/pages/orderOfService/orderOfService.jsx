@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./orderOfService.module.css";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
+import Exhortation from "../../components/exhortation/exhortation";
+import Declaration from "../../components/declaration/declaration";
+import Solemnization from "../../components/solemnization/solemnization";
 
 const OrderOfService = () => {
+  const [slide, setSlide] = useState(0)
+
+  const nextSlide = () => {
+    setSlide((prev) => prev + 1)
+  }
+  const prevSlide = () => {
+    setSlide((prev) => prev - 1)
+  }
+
   const orderService = [
     {
       id: 1,
@@ -68,9 +82,32 @@ const OrderOfService = () => {
       program: "Photographs",
     },
   ];
+  
+  const ministers = [
+    {
+      id: 1,
+      minister: 'Rev Emmanuel & Pastor Mrs. Olabisi Esseh'
+    },
+    {
+      id: 2,
+      minister: 'Rev Dr. Gabriel & Rev Mrs. Betty Aigbogu'
+    },
+    {
+      id: 3,
+      minister: 'Rev Dr. Dada Olu & Elder Kemi Shonibare'
+    },
+    {
+      id: 4,
+      minister: 'Bishop Gabriel Ayilara'
+    },
+    {
+      id: 5,
+      minister: 'Rev Isaac Awofiranye'
+    },
+  ]
   return (
     <div className={styles.wrapper}>
-      <div className={styles.contain}>
+      {slide === 0 &&<div className={styles.contain}>
         <div className={styles.inner_contain}>
           <h1 className={styles.order}>Order Of Service</h1>
 
@@ -80,11 +117,31 @@ const OrderOfService = () => {
             ))}
           </ol>
         </div>
-      </div>
+      </div>}
+      {slide === 1 && <div className={styles.contain}>
+        <div className={styles.inner_contain}>
+          <h1 className={styles.order}>OFFICIATING MINISTERS</h1>
+
+          <ul>
+            {ministers.map((item) => (
+              <li key={item.id}>{item.minister}</li>
+            ))}
+          </ul>
+        </div>
+      </div>}
+      {slide === 2 && <Exhortation/>}
+      {slide === 3 && <Declaration/>}
+      {slide === 4 && <Solemnization/>}
       <img
         src="https://t3.ftcdn.net/jpg/01/04/61/96/360_F_104619688_UP27I7cxkZKuNZn9GxCLCj0TztesAyMV.jpg"
         alt=""
       />
+      <div onClick={nextSlide} className={styles.next}>
+        <FaArrowRight />
+      </div>
+      <div onClick={prevSlide} className={styles.prev}>
+        <FaArrowLeft />
+      </div>
     </div>
   );
 };
