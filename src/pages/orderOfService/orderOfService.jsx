@@ -5,6 +5,8 @@ import { FaArrowLeft } from "react-icons/fa";
 import Exhortation from "../../components/exhortation/exhortation";
 import Declaration from "../../components/declaration/declaration";
 import Solemnization from "../../components/solemnization/solemnization";
+import Convenant from "../../components/convenant/convenant";
+import Blessings from "../../components/blessings/blessings";
 
 const OrderOfService = () => {
   const [slide, setSlide] = useState(0)
@@ -132,16 +134,18 @@ const OrderOfService = () => {
       {slide === 2 && <Exhortation/>}
       {slide === 3 && <Declaration/>}
       {slide === 4 && <Solemnization/>}
+      {slide === 5 && <Convenant/>}
+      {slide === 6 && <Blessings/>}
       <img
         src="https://t3.ftcdn.net/jpg/01/04/61/96/360_F_104619688_UP27I7cxkZKuNZn9GxCLCj0TztesAyMV.jpg"
         alt=""
       />
-      <div onClick={nextSlide} className={styles.next}>
+      {slide >= 0 &&<div onClick={nextSlide} className={styles.next}>
         <FaArrowRight />
-      </div>
-      <div onClick={prevSlide} className={styles.prev}>
+      </div>}
+      {slide !== 0  && <div onClick={prevSlide} className={styles.prev}>
         <FaArrowLeft />
-      </div>
+      </div>}
     </div>
   );
 };
