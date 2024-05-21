@@ -7,6 +7,10 @@ import Declaration from "../../components/declaration/declaration";
 import Solemnization from "../../components/solemnization/solemnization";
 import Convenant from "../../components/convenant/convenant";
 import Blessings from "../../components/blessings/blessings";
+import Giving from "../../components/giving/giving";
+import Prayer from "../../components/prayer/prayer";
+import Minister from "../../components/minister/minister";
+import Presentation from "../../components/presentation/presentation";
 
 const OrderOfService = () => {
   const [slide, setSlide] = useState(0)
@@ -34,6 +38,7 @@ const OrderOfService = () => {
     {
       id: 4,
       program: "Processional Hymn – IN CHRIST ALONE",
+      hymn: 'Christ'
     },
     {
       id: 5,
@@ -42,6 +47,7 @@ const OrderOfService = () => {
     {
       id: 6,
       program: "Congregational Hymn – O PERFECT LOVE",
+      hymn: 'Christ'
     },
     {
       id: 7,
@@ -115,7 +121,7 @@ const OrderOfService = () => {
 
           <ol>
             {orderService.map((item) => (
-              <li key={item.id}>{item.program}</li>
+              <li key={item.id}>{item.program}  {item.hymn && <button>Hymn</button>}</li>
             ))}
           </ol>
         </div>
@@ -127,6 +133,7 @@ const OrderOfService = () => {
           <ul>
             {ministers.map((item) => (
               <li key={item.id}>{item.minister}</li>
+              
             ))}
           </ul>
         </div>
@@ -136,11 +143,15 @@ const OrderOfService = () => {
       {slide === 4 && <Solemnization/>}
       {slide === 5 && <Convenant/>}
       {slide === 6 && <Blessings/>}
+      {slide === 7 && <Giving/>}
+      {slide === 8 && <Prayer/>}
+      {slide === 9 && <Minister/>}
+      {slide === 10 && <Presentation/>}
       <img
         src="https://t3.ftcdn.net/jpg/01/04/61/96/360_F_104619688_UP27I7cxkZKuNZn9GxCLCj0TztesAyMV.jpg"
         alt=""
       />
-      {slide >= 0 &&<div onClick={nextSlide} className={styles.next}>
+      {slide <= 9 &&<div onClick={nextSlide} className={styles.next}>
         <FaArrowRight />
       </div>}
       {slide !== 0  && <div onClick={prevSlide} className={styles.prev}>
