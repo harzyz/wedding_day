@@ -11,16 +11,22 @@ import Giving from "../../components/giving/giving";
 import Prayer from "../../components/prayer/prayer";
 import Minister from "../../components/minister/minister";
 import Presentation from "../../components/presentation/presentation";
+import Modal from "../../components/modal/modal";
+import InChristAlone from "../../components/inChristAlone/inChristAlone";
 
 const OrderOfService = () => {
-  const [slide, setSlide] = useState(0)
+  const [slide, setSlide] = useState(0);
+  const [hymn1, setHymn1] = useState(false);
 
   const nextSlide = () => {
-    setSlide((prev) => prev + 1)
-  }
+    setSlide((prev) => prev + 1);
+  };
   const prevSlide = () => {
-    setSlide((prev) => prev - 1)
-  }
+    setSlide((prev) => prev - 1);
+  };
+  const closeBrideModal = () => {
+    setHymn1(false);
+  };
 
   const orderService = [
     {
@@ -38,7 +44,7 @@ const OrderOfService = () => {
     {
       id: 4,
       program: "Processional Hymn – IN CHRIST ALONE",
-      hymn: 'Christ'
+      hymn: "Christ",
     },
     {
       id: 5,
@@ -47,7 +53,7 @@ const OrderOfService = () => {
     {
       id: 6,
       program: "Congregational Hymn – O PERFECT LOVE",
-      hymn: 'Christ'
+      hymn: "Christ",
     },
     {
       id: 7,
@@ -84,79 +90,99 @@ const OrderOfService = () => {
     {
       id: 15,
       program: "Recessional Hymn – LEAD US HEAVENLY FATHER, LEAD US",
+      hymn: "Christ",
     },
     {
       id: 16,
       program: "Photographs",
     },
   ];
-  
+
   const ministers = [
     {
       id: 1,
-      minister: 'Rev Emmanuel & Pastor Mrs. Olabisi Esseh'
+      minister: "Rev Emmanuel & Pastor Mrs. Olabisi Esseh",
     },
     {
       id: 2,
-      minister: 'Rev Dr. Gabriel & Rev Mrs. Betty Aigbogu'
+      minister: "Rev Dr. Gabriel & Rev Mrs. Betty Aigbogu",
     },
     {
       id: 3,
-      minister: 'Rev Dr. Dada Olu & Elder Kemi Shonibare'
+      minister: "Rev Dr. Dada Olu & Elder Kemi Shonibare",
     },
     {
       id: 4,
-      minister: 'Bishop Gabriel Ayilara'
+      minister: "Bishop Gabriel Ayilara",
     },
     {
       id: 5,
-      minister: 'Rev Isaac Awofiranye'
+      minister: "Rev Isaac Awofiranye",
     },
-  ]
+  ];
   return (
     <div className={styles.wrapper}>
-      {slide === 0 &&<div className={styles.contain}>
-        <div className={styles.inner_contain}>
-          <h1 className={styles.order}>Order Of Service</h1>
+      {slide === 0 && (
+        <div className={styles.contain}>
+          <div className={styles.inner_contain}>
+            <h1 className={styles.order}>Order Of Service</h1>
 
-          <ol>
-            {orderService.map((item) => (
-              <li key={item.id}>{item.program}  {item.hymn && <button>Hymn</button>}</li>
-            ))}
-          </ol>
+            <ol>
+              {orderService.map((item) => (
+                <li key={item.id}>
+                  {item.program}{" "}
+                  {item.hymn && (
+                    <button onClick={() => setHymn1(true)}>Hymn</button>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
-      </div>}
-      {slide === 1 && <div className={styles.contain}>
-        <div className={styles.inner_contain}>
-          <h1 className={styles.order}>OFFICIATING MINISTERS</h1>
+      )}
+      {slide === 1 && (
+        <div className={styles.contain}>
+          <h1 className={styles.official}>SUSAN & DANIEL</h1>
+          <div className={styles.inner_contain}>
+            <h1 className={styles.order}>OFFICIATING MINISTERS</h1>
 
-          <ul>
-            {ministers.map((item) => (
-              <li key={item.id}>{item.minister}</li>
-              
-            ))}
-          </ul>
+            <ul>
+              {ministers.map((item) => (
+                <li key={item.id}>{item.minister}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>}
-      {slide === 2 && <Exhortation/>}
-      {slide === 3 && <Declaration/>}
-      {slide === 4 && <Solemnization/>}
-      {slide === 5 && <Convenant/>}
-      {slide === 6 && <Blessings/>}
-      {slide === 7 && <Giving/>}
-      {slide === 8 && <Prayer/>}
-      {slide === 9 && <Minister/>}
-      {slide === 10 && <Presentation/>}
+      )}
+      {slide === 2 && <Exhortation />}
+      {slide === 3 && <Declaration />}
+      {slide === 4 && <Solemnization />}
+      {slide === 5 && <Convenant />}
+      {slide === 6 && <Blessings />}
+      {slide === 7 && <Giving />}
+      {slide === 8 && <Prayer />}
+      {slide === 9 && <Minister />}
+      {slide === 10 && <Presentation />}
       <img
         src="https://t3.ftcdn.net/jpg/01/04/61/96/360_F_104619688_UP27I7cxkZKuNZn9GxCLCj0TztesAyMV.jpg"
         alt=""
       />
-      {slide <= 9 &&<div onClick={nextSlide} className={styles.next}>
-        <FaArrowRight />
-      </div>}
-      {slide !== 0  && <div onClick={prevSlide} className={styles.prev}>
-        <FaArrowLeft />
-      </div>}
+      {slide <= 9 && (
+        <div onClick={nextSlide} className={styles.next}>
+          <FaArrowRight />
+        </div>
+      )}
+      {slide !== 0 && (
+        <div onClick={prevSlide} className={styles.prev}>
+          <FaArrowLeft />
+        </div>
+      )}
+
+      <Modal isOpen={hymn1} onClose={closeBrideModal}>
+        <div className={styles.modal_content}>
+          <InChristAlone />
+        </div>
+      </Modal>
     </div>
   );
 };
