@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './navbar.module.css'
-import emoji from '../../assets/images/loveEmo.jpg'
+import emoji from '../../assets/images/sharonDavid.jpeg'
 
 const Navbar = () => {
   return (
@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className={styles.emoji}>
         <img src={emoji} alt="" />
       </div>
-      <b>Janet and Johnbosco</b>
+      <b>Sharon and David</b>
     </nav>
   )
 }

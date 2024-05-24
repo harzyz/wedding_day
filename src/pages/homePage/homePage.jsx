@@ -12,14 +12,14 @@ import Footer from "../../components/footer/footer";
 
 
 const HomePage = () => {
-  const [groomModal, setGroomModal] = useState(false);
-  const [brideModal, setBrideModal] = useState(false);
-  const closeGroomModal = () => {
-    setGroomModal(false);
-  };
-  const closeBrideModal = () => {
-    setBrideModal(false);
-  };
+  // const [groomModal, setGroomModal] = useState(false);
+  // const [brideModal, setBrideModal] = useState(false);
+  // const closeGroomModal = () => {
+  //   setGroomModal(false);
+  // };
+  // const closeBrideModal = () => {
+  //   setBrideModal(false);
+  // };
   return (
     <div style={{ overflow: "hidden" }}>
       <Navbar />
@@ -28,10 +28,10 @@ const HomePage = () => {
       <Reception />
       <WeddingNote />
       <FloatingCard />
-      <AboutCouple setGroomModal={setGroomModal} setBrideModal={setBrideModal} />
+      {/* <AboutCouple setGroomModal={setGroomModal} setBrideModal={setBrideModal} /> */}
       <MorePictures />
       <Footer />
-      <Modal isOpen={groomModal} onClose={closeGroomModal}>
+      {/* <Modal isOpen={groomModal} onClose={closeGroomModal}>
         <div className={styles.modal_content}>
           
           <p>
@@ -54,9 +54,7 @@ const HomePage = () => {
       </Modal>
       <Modal isOpen={brideModal} onClose={closeBrideModal}>
         <div className={styles.modal_content}>
-          {/* <div className={styles.close_icon}>
-            <IoMdCloseCircleOutline onClick={closeBrideModal} />
-          </div> */}
+          
           <p>
             Okay, let's quickly take a walk down memory lane. It was the year
             2018, I was posted to a village called Igbemo in Ekiti state for
@@ -92,7 +90,7 @@ const HomePage = () => {
             I know. The best part, He’s all mine🤭!
           </p>
         </div>
-      </Modal>
+      </Modal> */}
     </div>
   );
 };
