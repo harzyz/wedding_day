@@ -7,7 +7,7 @@ const Hero = () => {
     <section className={styles.wrapper}>
       <img src={weddingPic} alt="" />
       <div className={styles.inner_wrapper}>
-        <h1>Journey with us to begin our <br/> forever ever after.</h1>
+        <h1>Sharon & David</h1>
       </div>
     </section>
   )
