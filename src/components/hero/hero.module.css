@@ -1,10 +1,8 @@
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   position: relative;
-  /* overflow: hidden; */
-
-  /* overflow-x: hidden; */
+  overflow: hidden;
 }
 .wrapper img {
   position: absolute;
@@ -14,11 +12,7 @@
   height: 100%;
   opacity: 1;
   scale: 1;
-  z-index: -1;
-  transform-origin: bottom;
-  animation: header-image-animation linear;
-  animation-timeline: view(100px 500px);
-  animation-range: exit;
+  object-position: 20% 20%;
   object-fit: cover;
 }
 .inner_wrapper {

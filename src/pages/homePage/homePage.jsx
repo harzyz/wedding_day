@@ -21,13 +21,13 @@ const HomePage = () => {
   //   setBrideModal(false);
   // };
   return (
-    <div style={{ overflow: "hidden" }}>
+    <div className={styles.wrapper}>
       <Navbar />
       {/* <div className={styles.scrollwatcher}></div> */}
       <Hero />
       <Reception />
       <WeddingNote />
-      <FloatingCard />
+      {/* <FloatingCard /> */}
       {/* <AboutCouple setGroomModal={setGroomModal} setBrideModal={setBrideModal} /> */}
       <MorePictures />
       <Footer />
