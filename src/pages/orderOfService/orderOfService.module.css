@@ -30,8 +30,8 @@
 .inner_contain{
   background-color: #fff;
   width: 500px;
-  height: 500px;
-  border-radius: 15px;
+  height: 95vh;
+  border-radius: 5px;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0px 30px;
@@ -106,8 +106,12 @@
   z-index: 100;
 }
 @media screen and (max-width: 700px) {
+  .contain{
+    padding: 10px 0;
+  }
   .inner_contain{
     width: 85%;
+    padding: 0 10px;
   }
   .modal_content{
     width: 100%;

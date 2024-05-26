@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./morePictures.module.css";
 import { Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
+import Pic1 from "../../assets/images/couple_pic.jpg"
+import Pic2 from "../../assets/images/couple_pic1.jpg"
 
 
 
@@ -12,13 +14,13 @@ const MorePictures = () => {
       <div className={styles.inner_wrapper}>
         <div className={styles.img_wrapper}>
           <img
-            src="https://images.unsplash.com/photo-1613281512736-55bd4a24f0a6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3V0ZSUyMGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D"
+            src={Pic1}
             alt=""
           />
         </div>
         <div className={styles.img_wrapper}>
           <img
-            src="https://images.unsplash.com/photo-1540076156429-35ffe82b7870?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG92ZSUyMGNvdXBsZXxlbnwwfHwwfHx8MA%3D%3D"
+            src={Pic2}
             alt=""
           />
         </div>

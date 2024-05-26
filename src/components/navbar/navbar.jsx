@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className={styles.emoji}>
         <img src={emoji} alt="" />
       </div>
-      {/* <b>Sharon and David</b> */}
+      <span>Sharon and David</span>
     </nav>
   )
 }

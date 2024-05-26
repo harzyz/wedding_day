@@ -57,9 +57,9 @@
 }
 @media screen and (max-width: 700px) {
   .wrapper {
-    height: 500px;
+    height: 100vh;
   }
   .inner_wrapper h1 {
-    font-size: 90px;
+    font-size: 70px;
   }
 }

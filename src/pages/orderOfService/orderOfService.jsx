@@ -13,6 +13,7 @@ import Minister from "../../components/minister/minister";
 import Presentation from "../../components/presentation/presentation";
 import Modal from "../../components/modal/modal";
 import InChristAlone from "../../components/inChristAlone/inChristAlone";
+import { Link } from "react-router-dom";
 
 const OrderOfService = () => {
   const [slide, setSlide] = useState(0);
@@ -44,7 +45,7 @@ const OrderOfService = () => {
     {
       id: 4,
       program: "Processional Hymn – IN CHRIST ALONE",
-      hymn: "Christ",
+      hymn: "/hymns",
     },
     {
       id: 5,
@@ -132,7 +133,9 @@ const OrderOfService = () => {
                 <li key={item.id}>
                   {item.program}{" "}
                   {item.hymn && (
-                    <button onClick={() => setHymn1(true)}>Hymn</button>
+                    <Link to={item.hymn}>
+                      <button onClick={() => setHymn1(true)}>Hymn</button>
+                    </Link>
                   )}
                 </li>
               ))}

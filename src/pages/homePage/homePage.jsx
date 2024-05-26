@@ -27,7 +27,7 @@ const HomePage = () => {
       <Hero />
       <Reception />
       <WeddingNote />
-      {/* <FloatingCard /> */}
+      <FloatingCard />
       {/* <AboutCouple setGroomModal={setGroomModal} setBrideModal={setBrideModal} /> */}
       <MorePictures />
       <Footer />
