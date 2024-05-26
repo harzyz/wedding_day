@@ -30,11 +30,14 @@
 .inner_contain{
   background-color: #fff;
   width: 500px;
-  height: 95vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   border-radius: 5px;
   overflow-y: scroll;
   overflow-x: hidden;
-  padding: 0px 30px;
+  padding: 20px 30px;
 }
 .inner_contain::-webkit-scrollbar{
   display: none;
@@ -105,13 +108,46 @@
   color: white;
   z-index: 100;
 }
+.emoji{
+  height: 80px;
+  width: 80px;
+}
+.emoji img{
+  height: 100%;
+  width: 100%;
+}
+.order_list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  text-align: center;
+  gap: 10px;
+}
+.hanging_rose{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  rotate: 270deg;
+}
+.hanging_rose img{
+  width: 100%;
+  height: 100%;
+}
+.order_item{
+  display: flex;
+  /* gap: 10px; */
+}
 @media screen and (max-width: 700px) {
   .contain{
-    padding: 10px 0;
+    padding: 0px 0;
   }
   .inner_contain{
-    width: 85%;
-    padding: 0 10px;
+    width: 75%;
+    padding: 20px 10px;
+    border-radius: 0;
   }
   .modal_content{
     width: 100%;

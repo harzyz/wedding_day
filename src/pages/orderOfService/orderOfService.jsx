@@ -14,6 +14,8 @@ import Presentation from "../../components/presentation/presentation";
 import Modal from "../../components/modal/modal";
 import InChristAlone from "../../components/inChristAlone/inChristAlone";
 import { Link } from "react-router-dom";
+import emoji from "../../assets/images/sharonDavid.jpeg";
+import blueRose from "../../assets/images/blue_rose.png";
 
 const OrderOfService = () => {
   const [slide, setSlide] = useState(0);
@@ -126,27 +128,33 @@ const OrderOfService = () => {
       {slide === 0 && (
         <div className={styles.contain}>
           <div className={styles.inner_contain}>
+            <div className={styles.emoji}>
+              <img src={emoji} alt="" />
+            </div>
             <h1 className={styles.order}>Order Of Service</h1>
 
-            <ol>
+            <div className={styles.order_list}>
               {orderService.map((item) => (
-                <li key={item.id}>
+                <div key={item.id}>
                   {item.program}{" "}
                   {item.hymn && (
                     <Link to={item.hymn}>
-                      <button onClick={() => setHymn1(true)}>Hymn</button>
+                      {/* <button onClick={() => setHymn1(true)}>Hymn</button> */}
                     </Link>
                   )}
-                </li>
+                </div>
               ))}
-            </ol>
+            </div>
           </div>
         </div>
       )}
       {slide === 1 && (
         <div className={styles.contain}>
-          <h1 className={styles.official}>SUSAN & DANIEL</h1>
+          {/* <h1 className={styles.official}>SUSAN & DANIEL</h1> */}
           <div className={styles.inner_contain}>
+            <div className={styles.emoji}>
+              <img src={emoji} alt="" />
+            </div>
             <h1 className={styles.order}>OFFICIATING MINISTERS</h1>
 
             <ul>
@@ -167,9 +175,12 @@ const OrderOfService = () => {
       {slide === 9 && <Minister />}
       {slide === 10 && <Presentation />}
       <img
-        src="https://t3.ftcdn.net/jpg/01/04/61/96/360_F_104619688_UP27I7cxkZKuNZn9GxCLCj0TztesAyMV.jpg"
+        src="https://i.pinimg.com/564x/e0/63/99/e063990de780a9ff9145311f70ca4628.jpg"
         alt=""
       />
+      {/* <div className={styles.hanging_rose}>
+        <img src={blueRose} alt="" />
+      </div> */}
       {slide <= 9 && (
         <div onClick={nextSlide} className={styles.next}>
           <FaArrowRight />

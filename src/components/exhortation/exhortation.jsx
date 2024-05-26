@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./exhortation.module.css";
+import emoji from "../../assets/images/sharonDavid.jpeg";
 
 const Exhortation = () => {
   const paragraph = [
@@ -31,6 +32,9 @@ const Exhortation = () => {
   return (
     <div className={styles.contain}>
       <div className={styles.inner_contain}>
+      <div className={styles.emoji}>
+              <img src={emoji} alt="" />
+            </div>
         <h1 className={styles.order}>EXHORTATION</h1>
 
         <div>
