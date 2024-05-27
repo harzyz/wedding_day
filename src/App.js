@@ -12,7 +12,7 @@ function App() {
         <Route exact path="/" element={<HomePage />} />
         <Route path="/photo-book" element={<PhotoBook />} />
         <Route path="/order-of-service" element={<OrderOfService />} />
-        <Route path="/hymns" element={<HymnPage />} />
+        <Route path="/hymns/:id" element={<HymnPage />} />
       </Routes>
     </Router>
   );

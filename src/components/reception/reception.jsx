@@ -12,17 +12,17 @@ const Reception = () => {
         <div className={styles.blackrose}>
           <img src={blackrose} alt="" />
         </div>
-        <h2>Joining Ceremony</h2>
-        <p>Sat Mar 23 2024</p>
-        <p>02:23 PM</p>
+        <h2>Church Service</h2>
+        <p>Sat June 8 2024</p>
+        <p>11 AM</p>
       </div>
       <div className={styles.right_side}>
         <div className={styles.blackrose}>
           <img src={blackrose} alt="" />
         </div>
         <h2>Reception</h2>
-        <p>Sat Mar 23 2024</p>
-        <p>02:23 PM</p>
+        <p>Sat June 8 2024</p>
+        <p>3 PM</p>
       </div>
     </div>
     </ScrollAnimation>

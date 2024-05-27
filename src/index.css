@@ -32,4 +32,8 @@ code {
 }
 .link{
   color: inherit;
+  height: 40px;
+}
+:root{
+  --primaryColor: #6BD1EF;
 }

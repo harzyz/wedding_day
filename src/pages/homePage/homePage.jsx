@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./homePage.module.css";
 import Navbar from "../../components/navbar/navbar";
 import Hero from "../../components/hero/hero";
 import FloatingCard from "../../components/floatingCard/floatingCard";
 import Reception from "../../components/reception/reception";
 import WeddingNote from "../../components/weddingNote/weddingNote";
-import AboutCouple from "../../components/aboutCouple/aboutCouple";
+// import AboutCouple from "../../components/aboutCouple/aboutCouple";
 import MorePictures from "../../components/morePictures/morePictures";
-import Modal from "../../components/modal/modal";
+// import Modal from "../../components/modal/modal";
 import Footer from "../../components/footer/footer";
 
 
@@ -27,8 +27,7 @@ const HomePage = () => {
       <Hero />
       <Reception />
       <WeddingNote />
-      <FloatingCard />
-      {/* <AboutCouple setGroomModal={setGroomModal} setBrideModal={setBrideModal} /> */}
+      <FloatingCard />  
       <MorePictures />
       <Footer />
       {/* <Modal isOpen={groomModal} onClose={closeGroomModal}>

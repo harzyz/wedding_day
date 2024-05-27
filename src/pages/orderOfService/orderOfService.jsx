@@ -47,7 +47,7 @@ const OrderOfService = () => {
     {
       id: 4,
       program: "Processional Hymn – IN CHRIST ALONE",
-      hymn: "/hymns",
+      hymn: "/hymns/1",
     },
     {
       id: 5,
@@ -56,7 +56,7 @@ const OrderOfService = () => {
     {
       id: 6,
       program: "Congregational Hymn – O PERFECT LOVE",
-      hymn: "Christ",
+      hymn: "/hymns/2",
     },
     {
       id: 7,
@@ -93,7 +93,7 @@ const OrderOfService = () => {
     {
       id: 15,
       program: "Recessional Hymn – LEAD US HEAVENLY FATHER, LEAD US",
-      hymn: "Christ",
+      hymn: "/hymns/3",
     },
     {
       id: 16,
@@ -136,10 +136,12 @@ const OrderOfService = () => {
             <div className={styles.order_list}>
               {orderService.map((item) => (
                 <div key={item.id}>
-                  {item.program}{" "}
+                  {!item.hymn && item.program}
                   {item.hymn && (
                     <Link to={item.hymn}>
-                      {/* <button onClick={() => setHymn1(true)}>Hymn</button> */}
+                      <button className={styles.hymn_btn}>
+                        {item.program}
+                      </button>
                     </Link>
                   )}
                 </div>
@@ -178,9 +180,12 @@ const OrderOfService = () => {
         src="https://i.pinimg.com/564x/e0/63/99/e063990de780a9ff9145311f70ca4628.jpg"
         alt=""
       />
-      {/* <div className={styles.hanging_rose}>
+      <div className={styles.hanging_rose}>
         <img src={blueRose} alt="" />
-      </div> */}
+      </div>
+      <div className={styles.hanging_rose1}>
+        <img src={blueRose} alt="" />
+      </div>
       {slide <= 9 && (
         <div onClick={nextSlide} className={styles.next}>
           <FaArrowRight />
@@ -191,6 +196,12 @@ const OrderOfService = () => {
           <FaArrowLeft />
         </div>
       )}
+
+      <div className={styles.go_back}>
+        <Link style={{ color: "inherit" }} to="/">
+          <FaArrowLeft />
+        </Link>
+      </div>
 
       <Modal isOpen={hymn1} onClose={closeBrideModal}>
         <div className={styles.modal_content}>

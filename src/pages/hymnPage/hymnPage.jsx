@@ -3,7 +3,8 @@ import styles from "./hymnPage.module.css"
 import InChristAlone from '../../components/inChristAlone/inChristAlone'
 import OPerfectLove from '../../components/oPerfectLove/oPerfectLove'
 import LeadUs from '../../components/leadUs/leadUs'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import { FaArrowLeft } from 'react-icons/fa6'
 
 const HymnPage = () => {
   const params = useParams()
@@ -22,14 +23,20 @@ const HymnPage = () => {
     },
   ]
 
-  const candidate = hymns.find((item) =>
+  const hymn = hymns.find((item) =>
     item.id === Number(params.id)
   );
   return (
     <div className={styles.wrapper}>
+      {hymn.hymn}
+      <div className={styles.go_back}>
+        <Link style={{color: 'inherit'}} to="/order-of-service">
+         <FaArrowLeft />
+        </Link>
+      </div>
       {/* <InChristAlone /> */}
       {/* <OPerfectLove /> */}
-      <LeadUs />
+      {/* <LeadUs /> */}
     </div>
   )
 }

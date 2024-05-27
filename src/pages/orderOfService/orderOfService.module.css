@@ -10,6 +10,7 @@
   position: relative;
   /* overflow-y: scroll;
   overflow-x: hidden; */
+  overflow: hidden;
 }
 .contain{
   position: absolute;
@@ -75,6 +76,19 @@
   align-items: center;
   justify-content: center;
 }
+.go_back{
+  /* width: 30px;
+  height: 30px; */
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  color: #FFF;
+}
 .modal_content{
   padding: 0px 30px;
   width: 500px;
@@ -127,10 +141,24 @@
 .hanging_rose{
   position: absolute;
   top: 0;
-  right: 0;
+  right: -15px;
   width: 100px;
   height: 100px;
   rotate: 270deg;
+  scale: 1.5;
+}
+.hanging_rose img{
+  width: 100%;
+  height: 100%;
+}
+.hanging_rose1{
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  width: 100px;
+  height: 100px;
+  rotate: 270deg;
+  scale: 1.5;
 }
 .hanging_rose img{
   width: 100%;
@@ -139,6 +167,13 @@
 .order_item{
   display: flex;
   /* gap: 10px; */
+}
+.hymn_btn{
+  background-color: var(--primaryColor);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  color: #FFF;
 }
 @media screen and (max-width: 700px) {
   .contain{

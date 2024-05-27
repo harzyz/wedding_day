@@ -10,9 +10,9 @@
   animation: scrollwatcher linear;
   animation-timeline: scroll();
 }
-/* .wrapper{
-  position: relative;
-} */
+.wrapper{
+  /* position: relative; */
+}
 @keyframes scrollwatcher {
   to { scale: 1 1;}
 }
