@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <ScrollAnimation animateIn='fadeIn'>
     <div className={styles.wrapper}>
-      <h3>Happy Married LIfe</h3>
+      <h3 className='font-bold text-[20px]'>Happy Married LIfe🎉🎉🎉</h3>
       <div>&copy;<span>{currentYear}</span></div>
     </div>
     </ScrollAnimation>

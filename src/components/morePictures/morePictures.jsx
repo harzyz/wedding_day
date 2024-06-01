@@ -9,25 +9,25 @@ import Pic2 from "../../assets/images/couple_pic1.jpg"
 
 const MorePictures = () => {
   return (
-    <ScrollAnimation animateIn="fadeIn">
     <div className={styles.wrapper}>
-      <div className={styles.inner_wrapper}>
-        <div className={styles.img_wrapper}>
+      <div className="p-[10px] w-full flex flex-col justify-center gap-[30px] lg:flex-row">
+        <div className="w-full lg:w-[400px] h-[400px]">
           <img
+            className="w-full h-full"
             src={Pic1}
-            alt=""
+            alt="Couple hugging"
           />
         </div>
-        <div className={styles.img_wrapper}>
+        <div className="w-full lg:w-[400px] h-[400px]">
           <img
+            className="w-full h-full"
             src={Pic2}
-            alt=""
+            alt="Ring Show off"
           />
         </div>
       </div>
       <Link className="link" to='/photo-book'><button className={styles.photobook_btn}>See full photobook</button></Link>
     </div>
-    </ScrollAnimation>
   );
 };
 
