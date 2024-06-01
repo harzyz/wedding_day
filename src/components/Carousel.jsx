@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 // import { ChevronLeft, ChevronRight } from "react-feather"
-import { FaArrowLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 
 export default function Carousel({
@@ -54,13 +54,13 @@ export default function Carousel({
       <div className="absolute inset-0 flex items-center justify-between p-4">
         <button
           onClick={prev}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+          className="p-1 rounded-full shadow bg-[#00000033] text-[#fff] hover:bg-[#00000080]"
         >
-          <FaArrowLeft size={40} />
+          <FaChevronLeft size={40} />
         </button>
         <button
           onClick={next}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+          className="p-1 rounded-full shadow bg-[#00000033] text-[#fff] hover:bg-[#00000080]"
         >
           <FaChevronRight size={40} />
         </button>
