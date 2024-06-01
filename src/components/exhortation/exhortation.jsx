@@ -32,9 +32,9 @@ const Exhortation = () => {
   return (
     <div className={styles.contain}>
       <div className={styles.inner_contain}>
-      <div className={styles.emoji}>
+      {/* <div className={styles.emoji}>
               <img src={emoji} alt="" />
-            </div>
+            </div> */}
         <h1 className={styles.order}>EXHORTATION</h1>
 
         <div>

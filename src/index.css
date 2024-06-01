@@ -15,7 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #6BD1EF;
+  background-color: var(--primaryColor);
 }
 ::-webkit-scrollbar{
   width: 10px;

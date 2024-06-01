@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./orderOfService.module.css";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaHome } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 import Exhortation from "../../components/exhortation/exhortation";
 import Declaration from "../../components/declaration/declaration";
@@ -129,9 +129,7 @@ const OrderOfService = () => {
       {slide === 0 && (
         <div className={styles.contain}>
           <div className={styles.inner_contain}>
-            <div className={styles.emoji}>
-              <img src={emoji} alt="" />
-            </div>
+            
             <h1 className={styles.order}>Order Of Service</h1>
 
             <div className={styles.order_list}>
@@ -155,9 +153,9 @@ const OrderOfService = () => {
         <div className={styles.contain}>
           {/* <h1 className={styles.official}>SUSAN & DANIEL</h1> */}
           <div className={styles.inner_contain}>
-            <div className={styles.emoji}>
+            {/* <div className={styles.emoji}>
               <img src={emoji} alt="" />
-            </div>
+            </div> */}
             <h1 className={styles.order}>OFFICIATING MINISTERS</h1>
 
             <ul>
@@ -178,6 +176,7 @@ const OrderOfService = () => {
       {slide === 9 && <Minister />}
       {slide === 10 && <Presentation />}
       <img
+        className={styles.back_feel}
         src="https://i.pinimg.com/564x/e0/63/99/e063990de780a9ff9145311f70ca4628.jpg"
         alt=""
       />
@@ -198,13 +197,7 @@ const OrderOfService = () => {
         </div>
       )}
 
-      {/* <div className={styles.go_back}>
-        <Link style={{ color: "inherit" }} to="/">
-          <FaArrowLeft />
-        </Link>
-      </div> */}
-
-      <PathBtn locate="/" icon={<FaArrowLeft />} />
+      <PathBtn locate="/" icon={<FaHome />} />
 
       <Modal isOpen={hymn1} onClose={closeBrideModal}>
         <div className={styles.modal_content}>

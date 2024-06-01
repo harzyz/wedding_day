@@ -22,8 +22,9 @@ svg:hover{
 }
 @media screen and (max-width: 700px){
   .wrapper{
-    width: 250px;
+    width: 80%;
     height: 120px;
     /* left: 40%; */
+    max-width: 300px;
   }
 }

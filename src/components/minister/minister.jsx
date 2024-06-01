@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './minister.module.css'
+import styles from '../exhortation/exhortation.module.css'
 
 const Minister = () => {
   const paragraph = [
