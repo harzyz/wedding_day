@@ -44,3 +44,15 @@ code {
 .placement{
   object-position: 20% 20%;
 }
+.name_text {
+  color: #fff;
+  font-size: 100px;
+  opacity: 1;
+  font-family: "Dancing Script", cursive;
+}
+
+@media screen and (max-width: 700px) {
+  .name_text{
+    font-size: 70px;
+  }
+}

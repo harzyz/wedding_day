@@ -48,7 +48,7 @@ const GiftPage = () => {
         <div className={styles.snowflake}>💷</div>
       </div>
       {azaS.map((item) => (
-        <div className="p-6 w-[270px] bg-primary text-white rounded-[8px] shadow-lg animate-bubble">
+        <div key={item.id} className="p-6 w-[270px] bg-primary text-white rounded-[8px] shadow-lg animate-bubble">
           <div className="text-xl flex flex-col items-center">
             <p className="text-3xl lg:text-5xl">{item.aza}</p>
             <p className="text-sm lg:text-[16px]">{item.azaName}</p>

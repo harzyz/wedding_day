@@ -10,17 +10,17 @@ import Pic2 from "../../assets/images/couple_pic1.jpg"
 const MorePictures = () => {
   return (
     <div className="h-full lg:h-[700px] flex flex-col justify-center items-center gap-[30px] pt-[30px] pb-[80px] bg-[#fff] lg:py-50px">
-      <div className="p-[10px] w-full flex flex-col justify-center gap-[30px] lg:flex-row">
+      <div className="p-[15px] w-full flex flex-col justify-center gap-[30px] lg:flex-row">
         <div className="w-full h-full lg:w-[400px] lg:h-[400px]">
           <img
-            className="w-full h-full"
+            className="w-full rounded-[8px] h-full"
             src={Pic1}
             alt="Couple hugging"
           />
         </div>
         <div className="w-full h-full lg:w-[400px] lg:h-[400px]">
           <img
-            className="w-full h-full"
+            className="w-full rounded-[8px] h-full"
             src={Pic2}
             alt="Ring Show off"
           />
