@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const Reception = () => {
   return (
     <ScrollAnimation animateIn="fadeIn">
-    <div className="p-[10px] lg:p-[50px] h-full lg:h-[400px] w-full flex flex-col lg:flex-row gap-[50px]">
+    <div className="p-[10px] lg:p-[50px] bg-[#fff] h-full lg:h-[400px] w-full flex flex-col lg:flex-row gap-[50px]">
       <div className="lg:w-[50%] h-[300px] lg:h-full flex flex-col lg:border-r border-[#cbc7c7] gap-[20px] justify-center items-center">
         <div className={styles.blackrose}>
           <img src={blackrose} alt="" />

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 // import { ChevronLeft, ChevronRight } from "react-feather"
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
+import { GoDownload } from "react-icons/go";
 
 export default function Carousel({
   children: slides,
@@ -21,35 +21,15 @@ export default function Carousel({
     return () => clearInterval(slideInterval);
   }, []);
 
-  // const slides = [
-  //   {
-  //     id: 1,
-  //     thumbnail:  picture
-  //   },
-  //   {
-  //     id: 2,
-  //     thumbnail:  picture1
-  //   },
-  //   {
-  //     id: 3,
-  //     thumbnail:  picture2
-  //   },
-  //   {
-  //     id: 4,
-  //     thumbnail:  picture3
-  //   },
-  //   {
-  //     id: 5,
-  //     thumbnail:  picture4
-  //   },
-  // ]
   return (
     <div className="overflow-hidden relative">
       <div
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
+        <div className="absolute text-[25px] text-[#fff] top-[10px] right-[10px]"><GoDownload /> </div>
         {slides}
+
       </div>
       <div className="absolute inset-0 flex items-center justify-between p-4">
         <button
@@ -75,7 +55,7 @@ export default function Carousel({
               transition-all w-3 h-3 bg-white rounded-full
               ${curr === i ? "p-2" : "bg-opacity-50"}
             `}
-            ><img src={_} alt="" /></div>
+            ></div>
           ))}
         </div>
       </div>

@@ -23,12 +23,12 @@ const changeColor = () => {
 
 
   return (
-    <nav className={`fixed top-0 w-full h-[70px] ${color ? "bg-[#fff]" : "bg-[transparent]"} z-20 items-center justify-between flex px-[20px] lg:px-[80px] `}>
-      <div className={styles.navbarItem}>
+    <nav className={`fixed top-0 w-full h-[70px] ${color ? "bg-[#fff]" : "bg-[transparent]"} z-20 items-center justify-between flex px-[10px] lg:px-[80px] `}>
+      <div className="flex items-center lg:gap-[10px]">
         <div className={styles.emoji}>
           <img src={emoji} alt="" />
         </div>
-        <span className='text-[12px] lg:text-[20px] font-[500]'>Sharon and David</span>
+        <span className={`${color ? "text-[#000]" : "text-[#fff]"} text-[18px] lg:text-[20px] font-[500]`}>Sharon and David</span>
       </div>
       <a href="https://www.formpl.us/form/5324187836481536"><button className={styles.photobook_btn}>RSVP</button></a>
     </nav>

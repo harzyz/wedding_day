@@ -9,6 +9,8 @@ import picture5 from "../../assets/images/couple_pic.jpg";
 import picture6 from "../../assets/images/couple_pic1.jpg";
 import picture7 from "../../assets/images/pic6.jpg";
 import picture8 from "../../assets/images/pic7.jpg";
+import PathBtn from "../../components/PathBtn";
+import { FaHome } from "react-icons/fa";
 
 const PhotoBook = () => {
   // const Column1 = [
@@ -106,6 +108,7 @@ const PhotoBook = () => {
     //   </div>
     // </div>
     <div className="relative w-full bg-[#00000066] h-screen flex items-center justify-center">
+      <PathBtn locate="/" icon={<FaHome />} />
       <div className="max-w-lg">
         <Carousel>
           {slides.map((s, index) => (
@@ -113,6 +116,8 @@ const PhotoBook = () => {
           ))}
         </Carousel>
       </div>
+      <div className="absolute w-full h-full z-[-1] bg-[#00000066] "></div>
+      <img className="absolute z-[-2] top-0 left-0  w-full h-full placement object-cover" src={picture1} alt="" />
     </div>
   );
 };

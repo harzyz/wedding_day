@@ -15,6 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #6BD1EF;
 }
 ::-webkit-scrollbar{
   width: 10px;
@@ -39,4 +40,7 @@ code {
 }
 :root{
   --primaryColor: #6BD1EF;
+}
+.placement{
+  object-position: 20% 20%;
 }

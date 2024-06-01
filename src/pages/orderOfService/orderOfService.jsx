@@ -16,6 +16,7 @@ import InChristAlone from "../../components/inChristAlone/inChristAlone";
 import { Link } from "react-router-dom";
 import emoji from "../../assets/images/sharonDavid.jpeg";
 import blueRose from "../../assets/images/blue_rose.png";
+import PathBtn from "../../components/PathBtn";
 
 const OrderOfService = () => {
   const [slide, setSlide] = useState(0);
@@ -197,11 +198,13 @@ const OrderOfService = () => {
         </div>
       )}
 
-      <div className={styles.go_back}>
+      {/* <div className={styles.go_back}>
         <Link style={{ color: "inherit" }} to="/">
           <FaArrowLeft />
         </Link>
-      </div>
+      </div> */}
+
+      <PathBtn locate="/" icon={<FaArrowLeft />} />
 
       <Modal isOpen={hymn1} onClose={closeBrideModal}>
         <div className={styles.modal_content}>

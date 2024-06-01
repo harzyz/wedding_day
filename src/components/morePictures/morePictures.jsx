@@ -9,7 +9,7 @@ import Pic2 from "../../assets/images/couple_pic1.jpg"
 
 const MorePictures = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className="h-full lg:h-[700px] flex flex-col justify-center items-center gap-[30px] pt-[30px] pb-[80px] bg-[#fff] lg:py-50px">
       <div className="p-[10px] w-full flex flex-col justify-center gap-[30px] lg:flex-row">
         <div className="w-full lg:w-[400px] h-[400px]">
           <img

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./inChristAlone.module.css";
+import PathBtn from "../PathBtn";
 
 const InChristAlone = () => {
   const orderService = [
@@ -26,6 +27,7 @@ const InChristAlone = () => {
   ];
   return (
     <div className={styles.inner_contain}>
+      
       <div className={styles.text_wrap}>
         <div className={styles.inner_text}>
           <h1 className={styles.order}>PROCESSIONAL HYMN - IN CHRIST ALONE</h1>

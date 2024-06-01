@@ -5,6 +5,7 @@ import OPerfectLove from '../../components/oPerfectLove/oPerfectLove'
 import LeadUs from '../../components/leadUs/leadUs'
 import { Link, useParams } from 'react-router-dom'
 import { FaArrowLeft } from 'react-icons/fa6'
+import PathBtn from '../../components/PathBtn'
 
 const HymnPage = () => {
   const params = useParams()
@@ -30,9 +31,10 @@ const HymnPage = () => {
     <div className={styles.wrapper}>
       {hymn.hymn}
       <div className={styles.go_back}>
-        <Link style={{color: 'inherit'}} to="/order-of-service">
+        {/* <Link style={{color: 'inherit'}} to="/order-of-service">
          <FaArrowLeft />
-        </Link>
+        </Link> */}
+        <PathBtn locate='/order-of-service' icon={<FaArrowLeft />} />
       </div>
       {/* <InChristAlone /> */}
       {/* <OPerfectLove /> */}

@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
   return (
     <ScrollAnimation animateIn='fadeIn'>
-    <div className={styles.wrapper}>
+    <div className="w-full h-[300px] text-center uppercase flex flex-col justify-between bg-[#fff]">
       <h3 className='font-bold text-[20px]'>Happy Married LIfe🎉🎉🎉</h3>
       <div>&copy;<span>{currentYear}</span></div>
     </div>
