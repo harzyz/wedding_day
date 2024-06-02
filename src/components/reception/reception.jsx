@@ -22,7 +22,7 @@ const Reception = () => {
         </div>
         <h2 className="text-2xl lg:text-3xl font-bold">Reception</h2>
         <p>Sat June 8 2024</p>
-        <p>3 PM</p>
+        <p>1 PM</p>
       </div>
     </div>
     </ScrollAnimation>
