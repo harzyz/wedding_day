@@ -30,7 +30,7 @@ const FloatingCard = () => {
     <div className={styles.wrapper}>
       {flotingCardItems.map((item) => (
         <div key={item.id} className="flex w-[33%] items-center flex-col gap-[5px]">
-          <Link className="link" to={item.path}>
+          <Link target="_blank" className="link" to={item.path}>
             {item.icon}
           </Link>
           <p className="text-xs text-center">{item.label}</p>

@@ -1,14 +1,6 @@
 import React from "react";
 // import styles from "./photoBook.module.css";
 import Carousel from "../../components/Carousel";
-import picture1 from "../../assets/images/pic2.jpg";
-import picture2 from "../../assets/images/pic3.jpg";
-import picture3 from "../../assets/images/pic4.jpg";
-import picture4 from "../../assets/images/pic5.jpg";
-import picture5 from "../../assets/images/couple_pic.jpg";
-import picture6 from "../../assets/images/couple_pic1.jpg";
-import picture7 from "../../assets/images/pic6.jpg";
-import picture8 from "../../assets/images/pic7.jpg";
 import PathBtn from "../../components/PathBtn";
 import { FaHome } from "react-icons/fa";
 

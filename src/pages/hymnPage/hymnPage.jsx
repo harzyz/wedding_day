@@ -6,6 +6,7 @@ import LeadUs from '../../components/leadUs/leadUs'
 import { Link, useParams } from 'react-router-dom'
 import { FaArrowLeft } from 'react-icons/fa6'
 import PathBtn from '../../components/PathBtn'
+import { TbClipboardHeart } from 'react-icons/tb'
 
 const HymnPage = () => {
   const params = useParams()
@@ -34,7 +35,7 @@ const HymnPage = () => {
         {/* <Link style={{color: 'inherit'}} to="/order-of-service">
          <FaArrowLeft />
         </Link> */}
-        <PathBtn locate='/order-of-service' icon={<FaArrowLeft />} />
+        <PathBtn locate='/order-of-service' icon={<TbClipboardHeart size={25} />} />
       </div>
       {/* <InChristAlone /> */}
       {/* <OPerfectLove /> */}

@@ -2,9 +2,6 @@ import React from "react";
 import styles from "./morePictures.module.css";
 import { Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
-import Pic1 from "../../assets/images/couple_pic.jpg"
-import Pic2 from "../../assets/images/couple_pic1.jpg"
-
 
 
 const MorePictures = () => {

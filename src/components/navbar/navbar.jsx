@@ -30,7 +30,7 @@ const changeColor = () => {
         </div>
         <span className={`${color ? "text-[#000]" : "text-[#fff]"} text-[18px] lg:text-[20px] font-[500]`}>Sharon and David</span>
       </div>
-      <a href="https://www.formpl.us/form/5324187836481536"><button className={styles.photobook_btn}>RSVP</button></a>
+      <a target="_blank" href="https://www.formpl.us/form/5324187836481536"><button className={styles.photobook_btn}>RSVP</button></a>
     </nav>
   )
 }

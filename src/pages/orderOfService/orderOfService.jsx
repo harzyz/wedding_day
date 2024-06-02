@@ -14,7 +14,6 @@ import Presentation from "../../components/presentation/presentation";
 import Modal from "../../components/modal/modal";
 import InChristAlone from "../../components/inChristAlone/inChristAlone";
 import { Link } from "react-router-dom";
-import emoji from "../../assets/images/sharonDavid.jpeg";
 import blueRose from "../../assets/images/blue_rose.png";
 import PathBtn from "../../components/PathBtn";
 

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./exhortation.module.css";
-import emoji from "../../assets/images/sharonDavid.jpeg";
 
 const Exhortation = () => {
   const paragraph = [
