@@ -12,7 +12,7 @@ const GiftPage = () => {
       aza: "3003206536",
       azaName: "David CHIBUEZE",
       azaBank: "UBA",
-      azaType: "Dorm",
+      azaType: "Dorm & Dollar",
     },
     {
       id: 2,
@@ -20,17 +20,10 @@ const GiftPage = () => {
       azaName: "Sharon Akintade",
       azaBank: "UBA",
       azaType: "Naira",
-    },
-    {
-      id: 3,
-      aza: "3003206536",
-      azaName: "David CHIBUEZE",
-      azaBank: "UBA",
-      azaType: "Dollar",
-    },
+    }
   ];
   return (
-    <div className="flex relative bg-[#fff] justify-center gap-[10px] lg:gap-[30px] flex-col items-center h-screen">
+    <div className="flex relative bg-[#fff] pt-[50px] lg:pt-0 lg:justify-center gap-[10px] lg:gap-[30px] flex-col items-center h-screen">
       <PathBtn locate="/" icon={<FaHome/>} />
       <GiftBubble />
       <div className="snowflakes" aria-hidden="true">
@@ -48,8 +41,8 @@ const GiftPage = () => {
         <div className={styles.snowflake}>💷</div>
       </div>
       {azaS.map((item) => (
-        <div key={item.id} className="p-6 w-[270px] bg-primary text-white rounded-[8px] shadow-lg animate-bubble">
-          <div className="text-xl flex flex-col items-center">
+        <div key={item.id} className="p-6 w-[270px] lg:w-[350px] bg-primary text-white rounded-[8px] shadow-lg animate-bubble">
+          <div className="flex flex-col items-center">
             <p className="text-3xl lg:text-5xl">{item.aza}</p>
             <p className="text-sm lg:text-[16px]">{item.azaName}</p>
             <p className="text-sm lg:text-[16px]">{item.azaBank + " Bank"}</p>

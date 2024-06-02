@@ -26,7 +26,7 @@ const InChristAlone = () => {
     },
   ];
   return (
-    <div className={styles.inner_contain}>
+    <div className="bg-[#fff] h-full w-full overflow-hidden relative ">
       
       <div className={styles.text_wrap}>
         <div className={styles.inner_text}>
@@ -43,6 +43,7 @@ const InChristAlone = () => {
         </div>
       </div>
       <img
+      className="w-full h-full"
         src="https://worshipwallpapers.com/wp-content/uploads/2016/11/inchristalone-ig.jpg"
         alt=""
       />
