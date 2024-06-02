@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ChurchLocation = () => {
   return (
-    <div className="relative w-full h-screen p-[20px] lg:p-[50px] gap-[100px] flex flex-col items-center justify-center bg-[#fff]">
+    <div className="relative w-full h-screen p-[20px] lg:p-[50px] gap-[100px] overflow-y-scroll flex flex-col items-center justify-center bg-[#fff]">
       {/* <button className='bg-primary w-[80px]'></button> */}
       <PathBtn locate="/" icon={<FaHome />} />
       <div className="text-center">
