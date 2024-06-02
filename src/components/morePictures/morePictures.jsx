@@ -14,15 +14,15 @@ const MorePictures = () => {
         <div className="w-full h-full lg:w-[400px] lg:h-[400px]">
           <img
             className="w-full rounded-[8px] h-full"
-            src={Pic1}
-            alt="Couple hugging"
+            src="https://firebasestorage.googleapis.com/v0/b/sd2024pictures.appspot.com/o/pic10.jpg?alt=media&token=e30c1084-d038-4d62-8f6f-aefd4cfc7aa9"
+            alt="Ring Show off"
           />
         </div>
         <div className="w-full h-full lg:w-[400px] lg:h-[400px]">
           <img
             className="w-full rounded-[8px] h-full"
-            src={Pic2}
-            alt="Ring Show off"
+            src="https://firebasestorage.googleapis.com/v0/b/sd2024pictures.appspot.com/o/pic9.jpg?alt=media&token=b8a7e901-9136-411c-98d6-5ecba65b6335"
+            alt="Couple hugging"
           />
         </div>
       </div>
