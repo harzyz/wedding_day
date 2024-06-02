@@ -23,15 +23,14 @@ const FloatingCard = () => {
       id: 3,
       icon: <MdNotListedLocation />,
       label: "Locate Church",
-      path: "https://maps.app.goo.gl/QtcdqkauiNsDPTzz5",
-      blank: "_blank"
+      path: "/church-location"
     },
   ];
   return (
     <div className={styles.wrapper}>
       {flotingCardItems.map((item) => (
         <div key={item.id} className="flex w-[33%] items-center flex-col gap-[5px]">
-          <Link target={item.blank} className="link" to={item.path}>
+          <Link className="link" to={item.path}>
             {item.icon}
           </Link>
           <p className="text-xs text-center">{item.label}</p>
