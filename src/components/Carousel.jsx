@@ -27,7 +27,7 @@ export default function Carousel({
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
-        <div className="absolute text-[25px] text-[#fff] top-[10px] right-[10px]"><GoDownload /> </div>
+        {/* <div className="absolute text-[25px] text-[#fff] top-[10px] right-[10px]"><GoDownload /> </div> */}
         {slides}
 
       </div>

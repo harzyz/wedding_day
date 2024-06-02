@@ -42,7 +42,7 @@ code {
   --primaryColor: #6BD1EF;
 }
 .placement{
-  object-position: 20% 20%;
+  object-position: 20% 20% 20%;
 }
 .name_text {
   color: #fff;
