@@ -36,7 +36,7 @@ const LeadUs = () => {
             </div>
           </div>
           <img
-            src="https://source.boomplaymusic.com/group10/M00/03/03/d65249d107e944c1a35cfa634d5d0673_464_464.JPG"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMqYeW3XXAgnnYEQDL5s_lgjSmZdlPFpVYpg&s"
             alt=""
           />
         </div>
