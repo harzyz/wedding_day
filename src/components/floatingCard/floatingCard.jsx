@@ -16,7 +16,7 @@ const FloatingCard = () => {
     {
       id: 2,
       icon: <FaSackDollar />,
-      label: "Cash Gifts",
+      label: "Cash Gifts & Wishlist",
       path: '/gifts'
     },
     {
